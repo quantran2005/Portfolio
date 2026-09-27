@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Quan Tran</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#home" class="logo">MyPortfolio</a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <p class="small-title">HELLO, I'M</p>
+
+                <h1>Quan Tran</h1>
+
+                <h2>Software Engineering Student</h2>
+
+                <p>
+                    I am a Software Engineering student who enjoys
+                    web development and building modern,
+                    user-friendly digital products.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/profile.jpg"
+                    alt="Quan Tran Profile">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>ABOUT ME</p>
+                <h2>About Me</h2>
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="about-image">
+
+                    <img
+                        src="assets/profile.jpg"
+                        alt="Quan Tran">
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <h3>I'm a Future Software Engineer</h3>
+
+                    <p>
+                        I am currently studying Software Engineering
+                        and developing my skills in web development.
+                        I am interested in both Front-End and Back-End
+                        development.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies, working on
+                        practical projects, solving problems, and
+                        improving my programming skills.
+                    </p>
+
+
+                    <div class="about-info">
+
+                        <div>
+                            <strong>Name:</strong>
+                            <span>Quan Tran</span>
+                        </div>
+
+                        <div>
+                            <strong>Major:</strong>
+                            <span>Software Engineering</span>
+                        </div>
+
+                        <div>
+                            <strong>Email:</strong>
+                            <span>quan@example.com</span>
+                        </div>
+
+                        <div>
+                            <strong>Location:</strong>
+                            <span>Hanoi, Vietnam</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section projects-section" id="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>MY WORK</p>
+                <h2>My Projects</h2>
+            </div>
+
+
+            <!-- FILTER -->
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all">
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="frontend">
+                    Front-End
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="backend">
+                    Back-End
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="fullstack">
+                    Full-Stack
+                </button>
+
+            </div>
+
+
+            <!-- PROJECT LIST -->
+            <div class="projects-grid">
+
+
+                <!-- Project 1 -->
+                <div
+                    class="project-card"
+                    data-category="frontend">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder">
+                            🌐
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Front-End
+                        </span>
+
+                        <h3>Clothing Website</h3>
+
+                        <p>
+                            A modern clothing e-commerce website
+                            with a responsive and user-friendly
+                            interface.
+                        </p>
+
+                        <button
+                            class="detail-btn"
+                            data-project="clothing">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div
+                    class="project-card"
+                    data-category="fullstack">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder">
+                            🏓
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Full-Stack
+                        </span>
+
+                        <h3>Pickleball Booking</h3>
+
+                        <p>
+                            A court management and booking system
+                            built with Front-End and Back-End
+                            technologies.
+                        </p>
+
+                        <button
+                            class="detail-btn"
+                            data-project="pickleball">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div
+                    class="project-card"
+                    data-category="backend">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder">
+                            💼
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Back-End
+                        </span>
+
+                        <h3>HR Management System</h3>
+
+                        <p>
+                            A human resource management system
+                            for employee records, attendance,
+                            overtime, and payroll.
+                        </p>
+
+                        <button
+                            class="detail-btn"
+                            data-project="hrm">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 4 -->
+                <div
+                    class="project-card"
+                    data-category="frontend">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder">
+                            🍳
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Front-End
+                        </span>
+
+                        <h3>Recipe App</h3>
+
+                        <p>
+                            A recipe application that allows users
+                            to browse and view detailed cooking
+                            recipes.
+                        </p>
+
+                        <button
+                            class="detail-btn"
+                            data-project="recipe">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>MY SKILLS</p>
+                <h2>Skills</h2>
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">🌐</div>
+
+                    <h3>HTML</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 90%"></span>
+                    </div>
+
+                    <p>90%</p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">🎨</div>
+
+                    <h3>CSS</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 85%"></span>
+                    </div>
+
+                    <p>85%</p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">⚡</div>
+
+                    <h3>JavaScript</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 80%"></span>
+                    </div>
+
+                    <p>80%</p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">⚛️</div>
+
+                    <h3>React</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 75%"></span>
+                    </div>
+
+                    <p>75%</p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">☕</div>
+
+                    <h3>Java</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 70%"></span>
+                    </div>
+
+                    <p>70%</p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">🗄️</div>
+
+                    <h3>SQL</h3>
+
+                    <div class="skill-bar">
+                        <span style="width: 75%"></span>
+                    </div>
+
+                    <p>75%</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section" id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                <p>CONTACT ME</p>
+                <h2>Get In Touch</h2>
+            </div>
+
+
+            <div class="contact-content">
+
+
+                <div class="contact-info">
+
+                    <h3>Let's Work Together</h3>
+
+                    <p>
+                        If you would like to discuss a project,
+                        internship opportunity, or collaboration,
+                        feel free to contact me.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <span>📧</span>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p>tranquan1234@gmail.com</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>📱</span>
+
+                        <div>
+                            <strong>Phone</strong>
+                            <p>0359 345 048</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>📍</span>
+
+                        <div>
+                            <strong>Location</strong>
+                            <p>Hanoi, Vietnam</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="contact-form"
+                    id="contactForm">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Quan Tran. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PROJECT MODAL ================= -->
+    <div
+        class="modal"
+        id="projectModal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose">
+                &times;
+            </button>
+
+
+            <div
+                class="modal-icon"
+                id="modalIcon">
+                🌐
+            </div>
+
+
+            <span
+                class="project-category"
+                id="modalCategory">
+                Front-End
+            </span>
+
+
+            <h2 id="modalTitle">
+                Project Title
+            </h2>
+
+
+            <p id="modalDescription">
+                Project description.
+            </p>
+
+
+            <div class="modal-details">
+
+                <div>
+                    <strong>Technologies:</strong>
+                    <span id="modalTech"></span>
+                </div>
+
+                <div>
+                    <strong>Role:</strong>
+                    <span id="modalRole"></span>
+                </div>
+
+                <div>
+                    <strong>Duration:</strong>
+                    <span id="modalTime"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
